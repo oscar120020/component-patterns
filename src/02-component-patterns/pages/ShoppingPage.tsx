@@ -1,5 +1,5 @@
-import React from 'react'
 import { ProductButtons, ProductCard, ProductImage, ProductTitle } from '../components'
+import '../styles/custom-styles.css'
 
 const product = {
   id: "1",
@@ -15,17 +15,35 @@ export const ShoppingPage = () => {
         <div style={{
           display: "flex",
           flexDirection: "row",
-          flexWrap: "wrap"
+          flexWrap: "wrap",
         }} >
-          <ProductCard product={product}>
-            <ProductCard.Image />
-            <ProductCard.Title />
-            <ProductCard.Buttons />
+          <ProductCard product={product} className="bg-dark">
+            <ProductCard.Image className="custom-image" />
+            <ProductCard.Title className="white-text" />
+            <ProductCard.Buttons className="custom-button" />
           </ProductCard>
 
-          <ProductCard product={product}>
-            <ProductImage />
-            <ProductTitle />
+          <ProductCard 
+            product={product}
+            className="bg-dark"
+          >
+            <ProductImage className="custom-image" />
+            <ProductTitle className="white-text" />
+            <ProductButtons className="custom-button" />
+          </ProductCard>
+
+          <ProductCard 
+            product={product}
+            style={{
+              backgroundColor: "#70D1F8"
+            }}
+          >
+            <ProductImage style={{
+              boxShadow: "0px 10px 10px gray"
+            }} />
+            <ProductTitle style={{
+              color: "green"
+            }} />
             <ProductButtons />
           </ProductCard>
         </div>

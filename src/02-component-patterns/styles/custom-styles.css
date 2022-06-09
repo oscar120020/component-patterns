@@ -1,0 +1,18 @@
+.bg-dark{
+    background-color: rgb(56, 56, 56);
+}
+
+.white-text{
+    color: white;
+}
+
+.custom-button button, .custom-button div{
+    border-color: white;
+    color: white;
+}
+
+.custom-image{
+    padding: 10px;
+    width: calc(100% - 20px);
+    border-radius: 20px;
+}
