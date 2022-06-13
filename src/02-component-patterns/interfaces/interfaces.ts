@@ -21,3 +21,12 @@ export interface ProductHOCProps {
     Image:   (props: ProductImageProps) => JSX.Element;
     Buttons: (props: ProductButtonsProps) => JSX.Element;
 }
+
+export interface onChageArgs {
+  product: Product;
+  count: number
+}
+
+export interface ShoppingCart extends Product {
+  count: number;
+}

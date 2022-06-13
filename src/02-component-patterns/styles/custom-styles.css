@@ -16,3 +16,9 @@
     width: calc(100% - 20px);
     border-radius: 20px;
 }
+
+.shopping-cart{
+    position: fixed;
+    top: 0;
+    right: 10px;
+}
