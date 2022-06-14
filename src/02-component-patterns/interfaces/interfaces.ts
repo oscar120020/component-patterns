@@ -13,6 +13,8 @@ export interface ProductContextProps {
   counter: number;
   product: Product;
   increaseBy: (value: number) => void;
+  maxCount?: number
+  isMaxCounterReached: boolean
 }
 
 export interface ProductHOCProps {
@@ -29,4 +31,19 @@ export interface onChageArgs {
 
 export interface ShoppingCart extends Product {
   count: number;
+}
+
+export interface InitialValues {
+  count?: number;
+  maxCount?: number;
+}
+
+export interface ProductCardHandlers {
+  count: number;
+  isMaxCounterReached: boolean;
+  maxCount?: number;
+  product: Product;
+  increaseBy: (value: number) => void;
+  reset: () => void;
+
 }
